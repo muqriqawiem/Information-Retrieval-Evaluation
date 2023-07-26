@@ -286,6 +286,7 @@
 
 #### Precision@10 vs MAP@10
 | |Precision@10|MAP@10|
+|-|------------|------|
 |Number of significant pairs|54|51|
 
 - First, we have conducted significant testing for the same metrics but different depths.
