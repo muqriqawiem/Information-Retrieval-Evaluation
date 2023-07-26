@@ -276,10 +276,12 @@
 
 #### Precision@10 vs Precision@100
 | |Precision@10|Precision@100|
+|-|------------|-------------|
 |Number of significant pairs|54|66|
 
 #### MAP@10 vs MAP@100
 | |MAP@10|MAP@100|
+|-|------|-------|
 |Number of significant pairs|51|55|
 
 #### Precision@10 vs MAP@10
