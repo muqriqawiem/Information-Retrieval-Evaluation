@@ -196,3 +196,33 @@
     - Can highlight the system's ability to retrieve relevant items within a smaller subset, potentially resulting in higher scores.
 - However, MAP@100 takes into account a larger pool of retrieved items.
     - Includes more non-relevant items, which can impact the overall average precision score.
+
+### System Ranking
+
+|Rank|System|Precision@10|System|Map@100|
+|----|------|------------|------|-------|
+|1|**System 15**|0.722|**System 15**|0.648299|
+|2|**System 5**|0.692|**System 5**|0.602349|
+|3|**System 9**|0.602|**System 9**|0.562690|
+|4|System 3|0.540|System 7|0.492832|
+|5|System 7|0.510|System 8|0.492832|
+|6|System 8|0.502|System 3|0.487752|
+|7|System 6 & System 14|0.486|System 13|0.471727|
+|8| | |System 10|0.460350|
+|9|System 4 & System 1|0.474|System 14|0.462806|
+|10| | |System 1|0.455366|
+|11|System 2|0.450|System 6|0.454345|
+|12|System 10|0.472|System 4|0.439029|
+|13|**System 11** & System 13|0.476|**System 11**|0.445300|
+|14| | |System 2|0.425485|
+|15|**System 13**|0.416|**System 12**|0.394284|
+
+*Bold indicate that the system ranked the same in both calculations.*
+
+- After computing the precision@k and MAP scores for each system, we used the precision@10 and MAP@100 metrics to rank the systems based on these two measures.
+    - According to Table 5, only five systems have the same rank in both metrics.
+        - System 15 is ranked first, System 5 is ranked second, System 9 is ranked third, System 11 is ranked eleventh, and System 15 is ranked twelfth.
+    - This indicates that the rankings of system performance vary when using these two metrics.
+- The results also demonstrate that although the rankings for most systems differ, they are not significantly different from one another.
+    - This suggests that there is some degree of consistency and similarity in the performance of the systems when considering both precision@10 and MAP@100.
+    - The minor variations in rankings indicate that the systems' relative performances are relatively consistent across the two evaluation metrics.
