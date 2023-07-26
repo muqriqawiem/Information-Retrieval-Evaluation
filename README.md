@@ -29,6 +29,6 @@
 ## Scores of Precision @ k and Average Precision
 
 ### Precision@k
-| P@10 | System 1 | System 2 | System 3 | System 4 | System 5 | System 6 | System 7 | System 8 | System 9 | System 10 |
+| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 | Column 6 | Column 7 | Column 8 | Column 9 | Column 10 | Column 11 | Column 12 | Column 13 | Column 14 | Column 15 | Column 16 |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | Data     | Data     | Data     | Data     | Data     | Data     | Data     | Data     | Data     | Data      | Data      | Data      | Data      | Data      | Data      | Data      |
