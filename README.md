@@ -261,4 +261,4 @@
     - **Alternative hypothesis**: The performance of System A is better than the performance of System B (p < 0.05).
 
 #### P-value of precision@10 for each system
-[Imgur](https://i.imgur.com/6rGwqLj.png)
+[!Imgur](https://i.imgur.com/6rGwqLj.png)
