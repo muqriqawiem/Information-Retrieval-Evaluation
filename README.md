@@ -226,3 +226,39 @@
 - The results also demonstrate that although the rankings for most systems differ, they are not significantly different from one another.
     - This suggests that there is some degree of consistency and similarity in the performance of the systems when considering both precision@10 and MAP@100.
     - The minor variations in rankings indicate that the systems' relative performances are relatively consistent across the two evaluation metrics.
+
+## Correlation Coefficient
+- To calculate the correlation between two metrics, we use `dataframe.corr()`, a method available in Pandas under Python library.
+    - The correlation formula in Pandas calculates the correlation coefficient using the Pearson correlation formula by default.
+
+#### Correlation Between Precision@10 with MAP@10
+| |Mean Precision|MAP|
+|-|--------------|---|
+|Mean precision|1.000000|0.944261|
+|MAP|0.944261|1.000000|
+
+#### Correlation Between Precision@10 with MAP@100
+| |Mean Precision|MAP|
+|-|--------------|---|
+|Mean precision|1.000000|0.983936|
+|MAP|0.983936|1.000000|
+
+- Correlation analyses were conducted between two evaluation metrics: **Precision@10 with MAP@10** and **Precision@10 with MAP@100**.
+    - The correlation between Precision@10 and MAP@10 metrics yielded a value of 0.944261.
+    - The correlation between Precision@10 and MAP@100 metrics resulted in a higher value of 0.983936.
+- Since both correlation values fall within the range of -1 to 1, it indicates a positive correlation between these metrics.
+    - This suggests that the variables under consideration, Precision@10 and MAP@10 or MAP@100, tend to vary in the same direction.
+    - Particularly, the correlation between Precision@10 with MAP@100 is stronger, as reflected by its higher correlation value at a larger depth of 100.
+        - This indicates a stronger positive relationship between Precision@10 and MAP@100 since their correlation value is closer to 1.
+
+## Significance Testing
+- The significance test is performed using the Precision@10 metrics with one-tailed paired t-test.
+    - We use `stats.ttest_rel` function from the Scipy library in Python to perform the one-tailed paired t-test and get the p-value.
+        - The “alternative" parameter is set to “greater”.
+        - In this case, the alternative hypothesis indicates that the mean score of “a” is greater than “b” where a and b are the systems to be compared.
+- Hypotheses:
+    - **Null hypothesis**: The performance of System A is equal to or worse than the performance of System B (p > 0.05).
+    - **Alternative hypothesis**: The performance of System A is better than the performance of System B (p < 0.05).
+
+#### P-value of precision@10 for each system
+[Imgur](https://i.imgur.com/6rGwqLj.png)
