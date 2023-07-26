@@ -26,9 +26,12 @@
 - System 14 = nttd8alx
 - System 15 = orcl99man
 
-## Scores of Precision @ k and Average Precision
+## Scores of Precision@k and Average Precision
 
 ### Precision@k
-| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 | Column 6 | Column 7 | Column 8 | Column 9 | Column 10 | Column 11 | Column 12 | Column 13 | Column 14 | Column 15 | Column 16 |
+
+#### Precision@10
+| P@10 | System 1 | System 2 | System 3 | System 4 | System 5 | System 6 | System 7 | System 8 | System 9 | System 10 | System 11 | System 12 | System 13 | System 14 | System 15 |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| Data     | Data     | Data     | Data     | Data     | Data     | Data     | Data     | Data     | Data      | Data      | Data      | Data      | Data      | Data      | Data      |
+| 401     | 0.6     | 0     | 0     | 0.4     | 0.3     | 0.2     | 0     | 1     | 1      | 0      | 0      | 0      | 0.1      | 0.1      | 0.9      |
+| 402 | 0.8 | 0.8 | 0.8 | 0.6 | 0.7 | 0.7 | 0.4 | 0.8 | 0.6 | 0.8 | 0.5 | 0.5 | 0.7 | 0.7 | 0.8
