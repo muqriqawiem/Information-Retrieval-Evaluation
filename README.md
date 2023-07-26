@@ -262,3 +262,39 @@
 
 #### P-value of precision@10 for each system
 ![Picture](https://i.imgur.com/6rGwqLj.png)
+
+#### P-value of precision@100 for each system
+![Picture](https://i.imgur.com/9cCJHVQ.png)
+
+#### P-value for MAP@10 for each system
+![Alt text](https://i.imgur.com/6WZeQJf.png)
+
+#### P-value of MAP@100 for each system
+![Alt text](https://i.imgur.com/ezTiMa5.png)
+
+*Highlighted cells are p-value that < 0.05, indicates that system a is significantly different to system b.*
+
+#### Precision@10 vs Precision@100
+| |Precision@10|Precision@100|
+|Number of significant pairs|54|66|
+
+#### MAP@10 vs MAP@100
+| |MAP@10|MAP@100|
+|Number of significant pairs|51|55|
+
+#### Precision@10 vs MAP@10
+| |Precision@10|MAP@10|
+|Number of significant pairs|54|51|
+
+- First, we have conducted significant testing for the same metrics but different depths.
+    - According to the first and second comparison, we can see that the number of significant pairs increases when the depth increases.
+        - Hence, increased depth helps us to uncover more performance differences that might not be as apparent when we use a lesser depth.
+- Then, we have conducted significance testing for the different metrics but same depth.
+    - Based on the result of the third comparison, we can conclude that Precision @10 shows greater variability and more significant differences between systems compared to MAP@10.
+
+## Contributors
+- Lee Xiao Yu
+- Chuah Ann Joe
+- Au Wan Ying
+- Loi Yi Hang
+- Muhammad Muqri Qawiem Bin Hanizam
