@@ -85,7 +85,7 @@
 |450|0.9|1|1|1|0.9|0.8|1|0.9|1|0.9|0.6|0.9|0.9|0.9|0.8|
 |AVG|0.474|0.45|0.54|0.476|0.692|0.486|0.51|0.502|0.602|0.47|0.472|0.416|0.486|0.476|0.722|
 
-### Mean Precision@10 and Mean Precision@100
+#### Mean Precision@10 and Mean Precision@100
 
 |Systems|Mean Precision@10|Mean Precision@100|
 |-------|-----------------|------------------|
@@ -104,3 +104,95 @@
 |System 13|0.486|0.2122|
 |System 14|0.476|0.2460|
 |System 15|0.722|0.3440|
+
+- Based on table, when different depth is used to calculate precision, the final result will differ.
+    - All the scores for Mean P@10 are higher than P@100.
+- The depth or cutoff value determines the number of retrieved items considered for calculating precision.
+    - When a smaller depth is used, only a subset of the retrieved items is evaluated.
+        - This can lead to a higher precision score since the focus is on a more limited set.
+    - Conversely, when a larger depth is used, a larger pool of retrieved items is considered.
+        - This can potentially dilute the precision as more non-relevant items are included in the calculation.
+
+### Average Precision
+
+#### Average Precision@100
+| AP@10 | System 1 | System 2 | System 3 | System 4 | System 5 | System 6 | System 7 | System 8 | System 9 | System 10 | System 11 | System 12 | System 13 | System 14 | System 15 |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|401|
+|402|
+|403|
+|404|
+|405|
+|406|
+|407|
+|408|
+|409|
+|410|
+|411|
+|412|
+|413|
+|414|
+|415|
+|416|
+|417|
+|418|
+|419|
+|420|
+|421|
+|422|
+|423|
+|424|
+|425|
+|426|
+|427|
+|428|
+|429|
+|430|
+|431|
+|432|
+|433|
+|434|
+|435|
+|436|
+|437|
+|438|
+|439|
+|440|
+|441|
+|442|
+|443|
+|444|
+|445|
+|446|
+|447|
+|448|
+|449|
+|450|
+|AVG|
+
+#### MAP@10 and MAP@100
+|Systems|MAP@10|MAP@100|
+|-------|------|-------|
+|System 1|0.615645|0.455366|
+|System 2|0.579611|0.425485|
+|System 3|0.656433|0.487752|
+|System 4|0.487752|0.439029|
+|System 5|0.825472|0.602349|
+|System 6|0.633674|0.454345|
+|System 7|0.661865|0.492832|
+|System 8|0.674001|0.492043|
+|System 9|0.777742|0.562690|
+|System 10|0.634144|0.460350|
+|System 11|0.626426|0.445300|
+|System 12|0.562317|0.394284|
+|System 13|0.394284|0.394284|
+|System 14|0.394284|0.462806|
+|System 15|0.825339|0.648299|
+
+- Based on table, when different depth is used to calculate the mean average precision (MAP), the final result will differ.
+    - All the scores for MAP@10 are higher than MAP@100.
+- When calculating MAP@10, only the top 10 retrieved items are considered.
+    - This leads to a more focused evaluation.
+    - Can highlight the system's ability to retrieve relevant items within a smaller subset, potentially resulting in higher scores.
+- However, MAP@100 takes into account a larger pool of retrieved items.
+    - Includes more non-relevant items, which can impact the overall average precision score.
